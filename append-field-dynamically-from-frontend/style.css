@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    padding: 0;
+}
+
+body,html{
+    background: #aad0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formBox{
+    background-color: #ae0038;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    padding: 20px 35px;
+    border-radius: 7px;
+}
+
+.formBox .hdng{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.formBox label {
+    color: #fff;
+}
