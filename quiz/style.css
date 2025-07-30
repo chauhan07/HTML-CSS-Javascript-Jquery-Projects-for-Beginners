@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.quizBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #faf8e8;
+    overflow-x: hidden;
+    padding: 15px 15px;
+}
+
+.quizBody::before {
+    content: "Quiz";
+    position: fixed;
+    width: 190px;
+    left: -50px;
+    top: 45px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5px 15px;
+    transform: rotate(316deg);
+}
+
+@media screen and (max-width:480px) {
+    .quizBody::before {
+        display: none;
+    }
+}
+
+.quizHdng .hdng {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+div#quiz_container {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.ques {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 35px;
+    background: #fff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.ques .label {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.ques .allOptions {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.ques .allOptions label.option {
+    width: 49%;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .ques .allOptions label.option {
+        width: 100%;
+    }
+}
+
+.nextBtn,
+.submitBtn {
+    margin-top: 40px;
+    text-align: right;
+}
+
+@media screen and (max-width:500px) {
+    .nextBtn,
+    .submitBtn {
+        text-align: center;
+    }
+}
+
+.nextBtn button,
+.submitBtn button {
+    display: inline-block;
+    background: #dbc300;
+    color: #000;
+    padding: 12px 45px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+}
+
+.nextBtn button:hover,
+.submitBtn button:hover {
+    background: #6b6006;
+    color: #fff;
+}
+
+.ques.empty {
+    border: 2px solid #a3a3ff;
+}
+
+.ques.correct {
+    border: 2px solid #17c57d;
+}
+
+.ques.wrong {
+    border: 2px solid #d70404;
+}
+
+.quizBody.result_page {
+    height: auto;
+    padding: 50px 25px;
+}
+
+.quizBody.result_page .ques {
+    margin-bottom: 50px;
+}
+
+.answersBox {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.answersBox span {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ques .allOptions label.option input {
+    display: none;
+}
+
+.ques .allOptions label.option span {
+    display: block;
+    padding: 10px 12px;
+    border: 2px solid #e6e6e6;
+    font-size: 14px;
+    position: relative;
+}
+
+.ques .allOptions label.option input+span::before {
+    position: absolute;
+    content: "";
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid #e6e6e6;
+}
+
+.ques .allOptions label.option input:checked+span,
+.ques .allOptions label.option input:checked+span::before {
+    border: 2px solid #000;
+}
+
+.ques .allOptions label.option input:checked+span::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 7px;
+    border: 2px solid #000;
+    border-top: 0;
+    border-right: 0;
+    transform: translateY(-50%) rotate(-45deg);
+    right: 7px;
+    top: 39%;
+}
+
+.r_option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: space-around;
+}
+
+.r_option span {
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.r_option span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%);
+}
+
+.r_option span.empty::before {
+    background: #a3a3ff;
+}
+
+.r_option span.wrong::before {
+    background: #d70404;
+}
+
+.r_option span.correct::before {
+    background: #17c57d;
+}
+
+.testResult {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.testResult>div {
+    width: calc(100% / 4);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width:576px) {
+    .testResult>div {
+        width: 50%;
+        margin: 10px 0;
+    }
+}
+
+.testResult>div span {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ede79d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #ede79d;
+    font-size: 16px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 7px;
+}
