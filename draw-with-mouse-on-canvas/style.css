@@ -1,0 +1,35 @@
+/*
+* Draw with Mouse on Canvas
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+* Description: A simple drawing application using HTML5 Canvas and JavaScript.
+*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffe325;
+}
+
+.container{
+    width: 600px;
+    max-width: 100%;
+}
+
+canvas{
+    margin-top: 10px;
+    border: 1px solid #dbb820;
+    background: #dbb820;
+    width: 600px;
+    max-width: 100%;
+    height: 300px;
+}
