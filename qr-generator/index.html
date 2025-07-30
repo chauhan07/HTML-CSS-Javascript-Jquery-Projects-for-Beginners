@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator & Scanner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <section class="qr_sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- QR Code Generator -->
+            <div class="box">
+              <h2>Generate QR Code</h2>
+              <textarea
+                name=""
+                id="qr-input"
+                placeholder="Enter text or URL"
+              ></textarea>
+              <button class="btn" onclick="generateQRCode()">Generate</button>
+              <div class="qr_wrap">
+                <div id="qrcode"></div>
+                <a href="#" class="btn" id="download">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- QR Code Scanner -->
+            <div class="box">
+              <h2>Scan QR Code from Image</h2>
+              <input class="form-control" type="file" id="file-input" />
+              <canvas id="canvas" hidden></canvas>
+              <p id="result" style="margin-top: 1rem; font-weight: bold"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
