@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+/**** custom input file ****/
+*{
+  font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #8bc34a;
+}
+
+h1{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    line-height: 1;
+}
+
+label.customInput_ap {
+    width: 100%;
+    padding: 40px 15px;
+    background: #fff;
+    border: 3px dashed #949C9D;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+label.customInput_ap input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0!important;
+    opacity: 0;
+    cursor:pointer;
+}
+
+.customInput_ap div img {
+    width: 35px;
+}
+
+.customInput_ap div span:nth-child(2) {
+    font-size: 18px;
+    display: block;
+    margin-top: 12px;
+}
+
+.customInput_ap div span:nth-child(3) {
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+}
+
+.customInput_ap div span:nth-child(4) {
+    display: block;
+    width: 180px;
+    margin: 20px auto 0;
+    background: #fff;
+    border: 2px solid #8bc34a;
+    height: 55px;
+    line-height: 48px;
+    color: #8bc34a;
+    font-size: 17px;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.ap_label_wrap {
+    background: #F8F8FA;
+    padding: 30px;
+    width: 950px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
