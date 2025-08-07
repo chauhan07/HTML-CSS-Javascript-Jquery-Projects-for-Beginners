@@ -1,3 +1,8 @@
+/*
+* Before and After Comparing
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
 
 body {
 	margin:0;
@@ -109,4 +114,5 @@ input#slider::-ms-tooltip {
   0% {width: 0%; }
   50% {width: 80%; }
   100% {width: 50%; }
+
 }
