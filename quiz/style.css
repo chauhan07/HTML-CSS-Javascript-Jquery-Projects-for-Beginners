@@ -1,3 +1,9 @@
+/*
+* Quiz
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -264,4 +270,5 @@ div#quiz_container {
     font-size: 16px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 7px;
+
 }
