@@ -1,3 +1,9 @@
+/*
+* Decimal to Binary Convertor
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;400;600;800&display=swap');
 * {
   font-family: 'Martel', serif;
@@ -97,4 +103,5 @@ span.errorShow {
   margin-top: 5px;
   font-weight: 600;
   letter-spacing: 0.6px;
+
 }
