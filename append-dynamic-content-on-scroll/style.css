@@ -1,3 +1,10 @@
+/*
+* Append Dynamic Content on Scroll
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+* Description: A simple drawing application using HTML5 Canvas and JavaScript.
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600;700;800&display=swap');
 *{
   font-family: 'Poppins', sans-serif;
@@ -24,4 +31,5 @@ div h1{
   width:250px;
   max-width:100%;
   margin:10px auto;
+
 }
