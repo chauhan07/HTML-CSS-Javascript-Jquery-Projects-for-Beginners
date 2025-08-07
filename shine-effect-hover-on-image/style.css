@@ -1,3 +1,9 @@
+/*
+* Shine Effect on Hover
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -73,4 +79,5 @@ h1{
     left: 125%;
   }
 }
+
 
