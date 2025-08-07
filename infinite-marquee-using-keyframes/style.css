@@ -1,3 +1,9 @@
+/*
+* Infinite Marquee using Keyframes
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
+
 *{
     margin: 0px;
     box-sizing: border-box;
@@ -124,4 +130,5 @@ body{
 
 .team-members li:nth-child(3n+3) figure {
     background-color: #e4f4ea;
+
 }
