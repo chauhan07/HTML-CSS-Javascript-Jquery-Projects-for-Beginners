@@ -1,3 +1,9 @@
+/*
+* Custom Input type File
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 /**** custom input file ****/
 *{
@@ -82,4 +88,5 @@ label.customInput_ap input {
     width: 950px;
     margin: 0 auto;
     border-radius: 5px;
+
 }
