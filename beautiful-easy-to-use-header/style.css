@@ -1,3 +1,10 @@
+/*
+* Append Dynamic Content on Scroll
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
+
+
 a,
 a:hover,
 a:focus {
@@ -304,4 +311,5 @@ header.ap_header {
   .socialLinks p {
     font-size: 13px;
   }
+
 }
