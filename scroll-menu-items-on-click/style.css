@@ -1,3 +1,9 @@
+/*
+* Scroll Menu Item Horizontally
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 /**** global css ****/
@@ -355,4 +361,5 @@ li {
         align-items: center;
         flex-direction: column;
     }
+
 }
