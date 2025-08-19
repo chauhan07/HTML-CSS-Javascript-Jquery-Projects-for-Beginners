@@ -1,0 +1,55 @@
+/*
+* Elegant Digital Clock
+* A simple yet elegant digital clock design using HTML, CSS and JS.
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
+
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0d0d0d;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+}
+
+.clock-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem 3rem;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8), inset 0 0 15px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.digital-clock {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin: 0;
+    animation: colorChange 10s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% { color: #00ffcc; text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc88; }
+    25% { color: #ff007f; text-shadow: 0 0 15px #ff007f, 0 0 30px #ff007f88; }
+    50% { color: #ffcc00; text-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc0088; }
+    75% { color: #00aaff; text-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff88; }
+    100% { color: #ff3b3b; text-shadow: 0 0 15px #ff3b3b, 0 0 30px #ff3b3b88; }
+}
+
+.date {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #e0e0e0;
+    letter-spacing: 2px;
+}
