@@ -1,3 +1,10 @@
+/*
+* Beautiful Stopwatch & Countdown Timer
+* A simple, elegant, and responsive timer with a glassmorphism design.
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
+
 /* ====== Layout & Background ====== */
 :root {
     --card-bg: rgba(255, 255, 255, 0.06);
@@ -237,3 +244,4 @@ body {
     margin-top: 10px;
     font-size: 12px;
 }
+
