@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautiful Stopwatch & Countdown Timer</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <main class="card" role="region" aria-label="Stopwatch and Countdown">
+        <div class="header">
+        <div class="title">Stopwatch & Countdown</div>
+        <div class="tabs" role="tablist" aria-label="Mode">
+            <button class="tab" id="tab-stopwatch" role="tab" aria-selected="true">Stopwatch</button>
+            <button class="tab" id="tab-countdown" role="tab" aria-selected="false">Countdown</button>
+        </div>
+        </div>
+
+        <!-- ===== Stopwatch ===== -->
+        <section id="stopwatch" class="section active" role="tabpanel" aria-labelledby="tab-stopwatch">
+        <div class="display" aria-live="polite">
+            <div class="time" id="sw-time">00:00:00</div>
+            <div class="ms" id="sw-ms">000</div>
+        </div>
+
+        <div class="controls">
+            <button class="btn primary" id="sw-start">Start</button>
+            <button class="btn" id="sw-lap" disabled>Lap</button>
+            <button class="btn" id="sw-pause" disabled>Pause</button>
+            <button class="btn danger" id="sw-reset" disabled>Reset</button>
+        </div>
+
+        <div class="laps" id="laps" aria-live="polite" aria-atomic="false"></div>
+        </section>
+
+        <!-- ===== Countdown ===== -->
+        <section id="countdown" class="section" role="tabpanel" aria-labelledby="tab-countdown">
+        <div class="countdown-setup">
+            <input class="field" id="cd-min" type="number" min="0" max="999" placeholder="Minutes" />
+            <input class="field" id="cd-sec" type="number" min="0" max="59" placeholder="Seconds" />
+        </div>
+        <div class="display">
+            <div class="time" id="cd-time">00:00</div>
+        </div>
+        <div class="controls">
+            <button class="btn primary" id="cd-start">Start</button>
+            <button class="btn" id="cd-pause" disabled>Pause</button>
+            <button class="btn danger" id="cd-reset" disabled>Reset</button>
+        </div>
+        <div class="progress-wrap" aria-hidden="true"><div class="progress" id="cd-progress"></div></div>
+        <div class="helper">Tip: enter minutes & seconds, then press Start. It will never go below 0.</div>
+        </section>
+
+        <div class="footer-note">Elegant glass UI • CloudxTech</div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
+
