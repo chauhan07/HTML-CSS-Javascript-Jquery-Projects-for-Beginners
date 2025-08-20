@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unit Converter - Celsius ↔ Fahrenheit</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="card" role="region" aria-label="Temperature Unit Converter">
+    <div class="header">
+      <div>
+        <div class="title">Unit Converter</div>
+        <div class="subtitle">Convert between Celsius (°C) and Fahrenheit (°F)</div>
+      </div>
+    </div>
+
+    <section class="grid" aria-live="polite">
+        <!-- Celsius Field -->
+        <div class="field" id="c-wrap">
+            <div class="label">Celsius <span class="badge">°C</span></div>
+            <input id="celsius" class="input" type="number" step="any" placeholder="Enter °C" aria-label="Celsius" />
+        </div>
+
+        <!-- Swap Button -->
+        <div class="swap">
+            <button id="swap" title="Swap °C ↔ °F" aria-label="Swap units">⇄</button>
+        </div>
+
+        <!-- Fahrenheit Field -->
+        <div class="field" id="f-wrap">
+            <div class="label">Fahrenheit <span class="badge">°F</span></div>
+            <input id="fahrenheit" class="input" type="number" step="any" placeholder="Enter °F" aria-label="Fahrenheit" />
+        </div>
+    </section>
+
+    <div class="footer">Two-way conversion • Accurate formulas • cloudxtech</div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
