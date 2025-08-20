@@ -1,0 +1,141 @@
+/*
+* Distance Unit Converter
+* A simple and elegant distance unit converter.
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
+
+:root {
+    --card-bg: rgba(255, 255, 255, 0.08);
+    --card-border: rgba(255, 255, 255, 0.2);
+    --field-bg: rgba(255, 255, 255, 0.14);
+    --field-border: rgba(255, 255, 255, 0.3);
+    --text: #fff;
+    --muted: #dbeafe;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ec4899, #8b5cf6, #06b6d4, #22c55e);
+    background-size: 400% 400%;
+    animation: bgShift 20s ease infinite;
+    font-family:
+        system-ui,
+        -apple-system,
+        Segoe UI,
+        Roboto,
+        Inter,
+        sans-serif;
+    color: var(--text);
+}
+@keyframes bgShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card {
+    width: min(92vw, 700px);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(16px) saturate(140%);
+    border-radius: 26px;
+    padding: 28px;
+    box-shadow: 0 14px 48px rgba(0, 0, 0, 0.45);
+    text-align: center;
+}
+.title {
+    font-weight: 900;
+    font-size: clamp(20px, 3vw, 30px);
+    margin-bottom: 10px;
+}
+.subtitle {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    gap: 14px;
+    align-items: center;
+}
+
+.field {
+    background: var(--field-bg);
+    border: 1px solid var(--field-border);
+    border-radius: 16px;
+    padding: 14px 16px;
+}
+.input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    font-size: clamp(22px, 5vw, 32px);
+    font-weight: 800;
+}
+.input::placeholder {
+    color: var(--text);
+}
+select {
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--text);
+}
+select:focus {
+    outline: none;
+}
+
+select option{
+    color:#000
+}
+
+.equals {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--muted);
+}
+
+.footer {
+    margin-top: 18px;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* Focus visibility */
+:focus-visible {
+    outline: none;
+    outline-offset: 2px;
+    border-radius: 10px;
+}

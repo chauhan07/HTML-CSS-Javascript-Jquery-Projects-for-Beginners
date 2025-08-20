@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Distance Unit Converter</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="card">
+    <div class="title">Distance Converter 📏</div>
+    <div class="subtitle">Convert between kilometers, miles, meters, feet, inches, and more</div>
+
+    <section class="grid">
+      <!-- Input side -->
+      <div class="field">
+        <input id="fromValue" class="input" type="number" placeholder="0" />
+        <select id="fromUnit">
+          <option value="km" selected>Kilometers (km)</option>
+          <option value="m">Meters (m)</option>
+          <option value="cm">Centimeters (cm)</option>
+          <option value="mi">Miles (mi)</option>
+          <option value="ft">Feet (ft)</option>
+          <option value="in">Inches (in)</option>
+        </select>
+      </div>
+
+      <div class="equals">=</div>
+
+      <!-- Output side -->
+      <div class="field">
+        <input id="toValue" class="input" type="text" placeholder="0" readonly />
+        <select id="toUnit">
+          <option value="m" selected>Meters (m)</option>
+          <option value="km">Kilometers (km)</option>
+          <option value="cm">Centimeters (cm)</option>
+          <option value="mi">Miles (mi)</option>
+          <option value="ft">Feet (ft)</option>
+          <option value="in">Inches (in)</option>
+        </select>
+      </div>
+    </section>
+
+    <div class="footer">Accurate distance conversions • cloudxtech</div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
