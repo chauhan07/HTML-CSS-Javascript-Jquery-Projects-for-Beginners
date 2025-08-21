@@ -1,0 +1,132 @@
+/*
+* Age Calculator 🎉
+* A simple web app to calculate age from a given date.
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(-45deg, #89f7fe, #66a6ff, #ff9a9e, #fad0c4);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    padding: 2rem;
+    text-align: center;
+    width: min(90vw, 600px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+label {
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.25);
+    color: #333;
+    transition: 0.3s;
+}
+
+input[type="date"]:focus {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 8px rgba(102, 166, 255, 0.7);
+}
+
+button {
+    margin-top: 1.2rem;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+    color: #fff;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.reset-btn {
+    margin-left: 10px;
+    background: linear-gradient(90deg, #ff5f6d, #ffc371);
+}
+
+.result,
+.generation {
+    display: none;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.result {
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+}
+
+.generation {
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
