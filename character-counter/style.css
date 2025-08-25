@@ -1,0 +1,122 @@
+/*
+* Character Counter
+* A simple character counter web application.
+* Author: Aditya Chauhan
+* Website: https://cloudxtech.io/
+*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(270deg, #6ee7b7, #3b82f6, #f472b6, #fbbf24, #34d399);
+    background-size: 900% 900%;
+    animation: gradient 22s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    width: 800px;
+    max-width: 95%;
+    text-align: center;
+    backdrop-filter: blur(6px);
+}
+h1 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #222;
+}
+.subtitle {
+    margin: 0 0 16px 0;
+    color: #555;
+    font-size: 14px;
+}
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    resize: none;
+    margin-bottom: 8px;
+    transition: border 0.3s ease;
+}
+textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.limit-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.limit-text {
+    font-size: 13px;
+    color: #666;
+}
+.bar {
+    position: relative;
+    width: 56%;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+}
+.bar > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0%;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4, #10b981);
+    transition: width 0.2s ease;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+}
+.stat-box {
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.stat-box h3 {
+    margin: 0;
+    font-size: 15px;
+    color: #555;
+}
+.stat-box p {
+    margin: 8px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #111;
+}
+.warn {
+    color: #b91c1c;
+    font-weight: 600;
+}

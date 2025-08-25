@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Counter Tool</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Character Counter</h1>
+    <p class="subtitle">Type or paste up to <strong>5000 letters</strong>. Spaces and punctuation don’t count toward the limit.</p>
+
+    <textarea id="inputText" placeholder="Type or paste your text..."></textarea>
+
+    <div class="limit-row">
+      <div class="limit-text" id="limitText">Letters: 0 / 5000</div>
+      <div class="bar"><span id="limitBar"></span></div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-box"><h3>Characters</h3><p id="charCount">0</p></div>
+      <div class="stat-box"><h3>Words</h3><p id="wordCount">0</p></div>
+      <div class="stat-box"><h3>Sentences</h3><p id="sentenceCount">0</p></div>
+      <div class="stat-box"><h3>Paragraphs</h3><p id="paraCount">0</p></div>
+      <div class="stat-box"><h3>Spaces</h3><p id="spaceCount">0</p></div>
+      <div class="stat-box"><h3>Capital Words</h3><p id="capsCount">0</p></div>
+      <div class="stat-box"><h3>Reading Time</h3><p id="readingTime">0 min</p></div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
